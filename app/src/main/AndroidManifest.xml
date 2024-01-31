@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.adeabel.mir">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MIR"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.ui.matriz.DetallesCompActActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.matriz.AgregarComActActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.matriz.DetallesIndicadorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.matriz.proposito.ListarIndicadoresPropositoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.matriz.fin.ActualizarFinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.matriz.fin.ListarIndicadoresFinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.matriz.AgregarIndicadorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.matriz.AgregarNivelMirActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.programa.ActualizarProgramasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.programa.AgregarProgramasActivity"
+            android:exported="false"
+            android:label="@string/title_activity_agregar_programas"
+            android:theme="@style/Theme.MIR.NoActionBar" />
+        <activity
+            android:name=".activity.ui.centrogestor.ActualizarCentroGestorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.centrogestor.AgregarCentroGestorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.estrategia.ActualizarEstrategiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.estrategia.AgregarEstrategiasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.subtema.ActualizarSubtemasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.subtema.AgregarSubtemasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.ejes.ActualizarEjes_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ui.ejes.Agregar_Ejes_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.InicioActivity"
+            android:exported="false"
+            android:label="@string/title_activity_inicio"
+            android:theme="@style/Theme.MIR.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

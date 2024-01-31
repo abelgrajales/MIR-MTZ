@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.adeabel.mir.activity.ui.inicio.InicioFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_ejes"
+        android:name="com.adeabel.mir.activity.ui.ejes.ListarEjesFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_ejes" />
+
+    <fragment
+        android:id="@+id/nav_subtemas"
+        android:name="com.adeabel.mir.activity.ui.subtema.ListarSubtemasFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_listar_subtemas" />
+
+    <fragment
+        android:id="@+id/nav_estrategias"
+        android:name="com.adeabel.mir.activity.ui.estrategia.ListarEstrategiasFragment"
+        android:label="Estrategias"
+        tools:layout="@layout/fragment_listar_estrategias" />
+
+    <fragment
+        android:id="@+id/nav_centrogestor"
+        android:name="com.adeabel.mir.activity.ui.centrogestor.ListarCentroGestorFragment"
+        android:label="Centro gestor"
+        tools:layout="@layout/fragment_listar_centro_gestor" />
+
+    <fragment
+        android:id="@+id/nav_programa"
+        android:name="com.adeabel.mir.activity.ui.programa.ListarProgramasFragment"
+        android:label="Programas"
+        tools:layout="@layout/fragment_listar_programas" />
+
+    <fragment
+        android:id="@+id/nav_mir"
+        android:name="com.adeabel.mir.activity.ui.matriz.ListarMatrizFragment"
+        android:label="MIR"
+        tools:layout="@layout/fragment_listar_matriz" />
+</navigation>

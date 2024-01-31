@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ui.matriz.AgregarComActActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/tv_mir_nombre_programa_ca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Programa: "/>
+
+            <TextView
+                android:id="@+id/tv_agregar_ca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_resumen_narrativo_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Resumen narrativo"
+            app:boxBackgroundMode="outline"
+            android:paddingTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_supuestos_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Supuestos"
+            app:boxBackgroundMode="outline"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/sp_tipo_indicador_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smsp_isOutlined="true"
+            app:smsp_outlinedBoxColor="#3C3C3C"
+            app:smsp_outlinedBoxRadius="5dp"
+            android:paddingBottom="10dp"
+            app:smsp_hint="Tipo de indicador"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_nombre_indicador_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del indicador"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_descripcion_indicador_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción del indicador"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/sp_dimension_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smsp_isOutlined="true"
+            app:smsp_outlinedBoxColor="#3C3C3C"
+            app:smsp_outlinedBoxRadius="5dp"
+            android:paddingBottom="15dp"
+            app:smsp_hint="Dimension"/>
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/sp_frecuencia_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smsp_isOutlined="true"
+            app:smsp_outlinedBoxColor="#3C3C3C"
+            app:smsp_outlinedBoxRadius="5dp"
+            android:paddingBottom="15dp"
+            app:smsp_hint="Frecuencia"/>
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/sp_algoritmo_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smsp_isOutlined="true"
+            app:smsp_outlinedBoxColor="#3C3C3C"
+            app:smsp_outlinedBoxRadius="5dp"
+            android:paddingBottom="15dp"
+            app:smsp_hint="Algoritmo"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_variable_a_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Variable de calculo A"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_unidad_a_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unidad (A)"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_variable_b_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Variable de calculo B"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_unidad_b_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unidad (B)"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_meta_a_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valor programado A"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_meta_b_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valor programado B"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_medios_verificacion_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medios de verifiación"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_optimo_min_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Óptimo mínimo"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_optimo_max_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Óptimo maximo"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_proceso_min_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="En proceso mínimo"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_proceso_max_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="En proceso maximo"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_rezago_min_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rezago mínimo"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_rezago_max_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rezago maximo"
+            app:boxBackgroundMode="outline"
+            android:paddingBottom="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_guardar_indicador_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"/>
+
+    </LinearLayout>
+
+</ScrollView>
