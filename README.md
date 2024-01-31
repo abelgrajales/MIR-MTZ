@@ -2,10 +2,11 @@
 
 ## 📚 Descripción 📚
 Aplicación móvil Android que ayuda en la generación de Matrices de Indicadores para Resultados.
+Se utilizó como Backend PHP para administrar la base de datos del servidor.
 
 ## 🚀 Caracteristicas 🚀
 - Inicio de sesión
-- Guardado de datos necesarios de una MIR
+- Guardado de datos necesarios de una MIR (CRUD)
 - Generación de matrices en formato PDF
 
 ## 🚀 Tecnologías 🚀
