@@ -15,4 +15,5 @@ Aplicación móvil Android que ayuda en la generación de Matrices de Indicadore
 - Android
 - Volley
   
-![MIRMTZ](https://github.com/abelgrajales/MIR-MTZ/assets/158242303/4a45b34b-0754-4549-8c52-8acb7cc9d82a)
+![MIRMTZ](https://github.com/abelgrajales/MIR-MTZ/assets/158242303/15214126-2254-43e9-b0f3-d2e4384465f5)
+
